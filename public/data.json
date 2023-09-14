@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/CB7kFHt/Rectangle-2-2.png",
+      "title": "Introduction to C Programming",
+      "details": "Learn the basics of C programming language, including variables, loops, and functions.",
+      "price": 15000,
+      "credit_hour": 1
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/2MqKSGf/Rectangle-2-3.png",
+      "title": "Introduction to Algorithms",
+      "details": "Explore the fundamental concepts of algorithms and algorithmic design",
+      "price": 25000,
+      "credit_hour": 2
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/HFxtFCq/Rectangle-2-4.png",
+      "title": "Introduction to C++ for DSA",
+      "details": "Learn C++ programming and its applications in data structures and algorithms.",
+      "price": 10000,
+      "credit_hour": 10
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/M9VBTfw/Rectangle-3.png",
+      "title": "Basic Data Structures",
+      "details": "Learn the fundamentals of data structures like arrays, linked lists, and stacks.",
+      "price": 35000,
+      "credit_hour": 5
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/44tBtJs/Rectangle-2.png",
+      "title": "Introduction to OOP in Python",
+      "details": "Learn the principles of OOP and how to apply them in Python programming.",
+      "price": 19000,
+      "credit_hour": 5
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/48K9HjF/Rectangle-2-5.png",
+      "title": "Software Engineering",
+      "details": "Master the principles and practices of software engineering, including design, development, and testing.",
+      "price": 23000,
+      "credit_hour": 2
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co/7gYbHpc/Rectangle-3-1.png",
+      "title": "AWS, Cloud Computing",
+      "details": "Learn cloud computing fundamentals and how to use Amazon Web Services (AWS) for cloud solutions.",
+      "price": 35000,
+      "credit_hour": 5
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co/GTk9p86/Rectangle-2-1.png",
+      "title": "Database (MySQL)",
+      "details": "Learn the fundamentals of database management and SQL using MySQL.",
+      "price": 19000,
+      "credit_hour": 5
+    },
+    {
+      "id": 9,
+      "image": "https://i.ibb.co/PWBjN5v/Rectangle-2-6.png",
+      "title": "Problem-Solving Part",
+      "details": "Enhance your problem-solving skills and critical thinking abilities.",
+      "price": 23000,
+      "credit_hour": 2
+    }
+  ]
+  
