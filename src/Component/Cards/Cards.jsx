@@ -1,9 +1,31 @@
+import { useEffect, useState } from "react";
+import Card from "./Card";
 
 
 const Cards = () => {
+    const [card,setCard] = useState([]);
+
+    useEffect(()=>{
+        fetch('data.json')
+        .then(res => res.json())
+        .then(data => setCard(data))
+    },[])
+
+
+
     return (
         <div className="w-2/3">
-            <h3 className='text-5xl font-bold'>This is card container</h3>
+            
+            <div className="grid grid-cols-3 gap-5">
+                
+            {
+           
+           card.map(card => <Card card={card}></Card>)
+           }
+            </div>
+
+
+           
         </div>
     );
 };
