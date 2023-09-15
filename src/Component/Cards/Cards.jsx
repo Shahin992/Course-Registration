@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Card from "./Card";
 
 
-const Cards = () => {
+const Cards = ({selectedBtn}) => {
     const [card,setCard] = useState([]);
 
     useEffect(()=>{
@@ -20,7 +20,7 @@ const Cards = () => {
                 
             {
            
-           card.map(card => <Card card={card}></Card>)
+           card.map(card => <Card selectedBtn={selectedBtn} card={card}></Card>)
            }
             </div>
 
