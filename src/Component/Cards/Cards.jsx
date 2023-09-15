@@ -20,7 +20,7 @@ const Cards = ({selectedBtn}) => {
                 
             {
            
-           card.map(card => <Card selectedBtn={selectedBtn} card={card}></Card>)
+           card.map((card) =>  <Card selectedBtn={selectedBtn} card={card}></Card>)
            }
             </div>
 

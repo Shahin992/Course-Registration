@@ -3,6 +3,9 @@ import { useState } from 'react'
 import './App.css'
 import Cards from './Component/Cards/Cards'
 import Cart from './Component/Cart/Cart'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   let Remaining = 20
@@ -21,6 +24,18 @@ function App() {
 
     let creditHour = cardDetails.credit_hour;
     let count = cardDetails.price ;
+
+    const isItemInCart = selected.find((item) => item.title === cardDetails.title);
+   if(isItemInCart){
+      return (toast.error("Course already Selected", {
+        position: toast.POSITION.TOP_CENTER,
+        autoClose: 3000, 
+      }));
+    
+    }
+   
+
+    console.log(isItemInCart);
     
     selected.forEach((item)=>{
       count = count +item.price
@@ -29,13 +44,23 @@ function App() {
     }
       
       ) 
+      
 
+      
       remaining = Remaining - creditHour;
 
+      if(creditHour>Remaining){
+        return (toast.error("You don't have enough credit hour", {
+          position: toast.POSITION.TOP_CENTER,
+          autoClose: 3000, 
+        }));
+      
+      }
+      
       setSelected(newSelected);
-      setHour(creditHour);
       setTotal(count);
       setRemaining(remaining);
+      setHour(creditHour);
       
 
   }
@@ -49,6 +74,7 @@ function App() {
       <div className='flex gap-8'>
         <Cards selectedBtn={selectedBtn}></Cards>
         <Cart remaining={remaining} hour={hour} total={total} selected={(selected)}></Cart>
+        <ToastContainer/>
 
       </div>
       

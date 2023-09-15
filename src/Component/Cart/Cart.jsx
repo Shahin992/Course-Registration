@@ -31,6 +31,8 @@ const Cart = ({selected,hour,total,remaining}) => {
 
 
 
+
+
         </div>
     );
 };

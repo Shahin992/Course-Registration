@@ -5,7 +5,7 @@ const Card = ({card,selectedBtn}) => {
     return (
         <div className='p-3 bg-slate-100 rounded-lg '>
             <img className='mb-4 h-36' src={image} alt="" />
-            <h4 className="text-left text-lg h-10 font-semibold mb-2">{title}</h4>
+            <h4 className="text-left text-lg h-10 font-semibold mb-2"> {title}</h4>
             <p className='text-left mb-2 h-20'>{details}</p>
             <div className="mt-4 flex justify-between">
                 <p className="font-medium">Price:$ {price}</p>
